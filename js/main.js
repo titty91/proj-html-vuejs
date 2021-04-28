@@ -26,19 +26,19 @@ function init() {
           text: 'Shop'
         }
       ],
-      elmFooter:[
+      elmFooter:
         {
           address:'382NE 191st St #87394 Miami, FL33179-3899',
           phone: '+1(305)547-9909(9am - 5pm EST,Monday - Friday)',
           mail: 'support@maxcoach.com',
           social: [
-            '<i class="fab fa-facebook-square"></i>',
-            '<i class="fab fa-instagram"></i>',
-            '<i class="fab fa-twitter"></i>',
-            '<i class="fab fa-linkedin"></i>'
+            'fab fa-facebook-square',
+            'fab fa-instagram',
+            'fab fa-twitter',
+            'fab fa-linkedin'
           ]
-        }
-      ],
+        },
+
       Explore:[
         {
           ExTxt: 'Start here'
