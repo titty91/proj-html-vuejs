@@ -1,0 +1,304 @@
+/* dati generali */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #eceeef;
+}
+
+/* elementi barra di navigazione - - - - - - - - */
+header{
+  height: 80px;
+  background-color: #fefefe;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lg-business{
+  height: 25px;
+  margin-left: 100px;
+  width: auto;
+}
+
+header ul li{
+  color:#25064C;
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 30px;
+  position: relative;
+}
+
+header ul li i{
+  font-size: 8px;
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+}
+
+/* lato dx barra di navogazione */
+.userSearch{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.userSearch ul li{
+  color: #282935;
+  padding: 0 20px;
+  position: relative;
+}
+
+.userSearch .fa-chevron-down{
+  color: #282935;
+  position: absolute;
+  right: 8px;
+}
+
+.userSearch img{
+  height: 20px;
+  width: auto;
+  padding-right: 10px;
+  position: absolute;
+  right: 95px;
+}
+
+.userSearch .fa-user-circle{
+  font-size: 20px;
+  line-height: 2px;
+}
+
+.userSearch span i{
+  padding-right: 20px;
+}
+
+.userSearch input{
+  font-family: 'Montserrat', sans-serif;
+  height: 79px;
+  border: none;
+  border-left: 1px solid #eceeef;
+}
+
+/* elementi corpo sito  - - - - - -  -*/
+.jumbotron{
+  background-color: #eceeef;
+  height: 600px;
+  width: auto;
+  position: relative;
+}
+
+.text-jumbotron{
+  width: 50%;
+  padding: 140px 0 0;
+  line-height: 3;
+  color: #282935;
+}
+
+.text1{
+  color: #2fad96;
+}
+
+.title{
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 45px;
+}
+
+.text2{
+  color:#797979;
+  line-height: 20px;
+  padding-top: 20px;
+}
+
+.btn{
+  border: none;
+  border-radius: 3px;
+  padding: 15px 30px;
+  font-weight: bold;
+  font-size: 10px;
+  margin-top: 20px;
+}
+
+.green{
+  color: #fefefe;
+  background-color: #1eae96;
+}
+
+.img-jmb{
+  height:550px;
+  position: absolute;
+  bottom: 0;
+  right: 400px;
+  z-index: 99;
+}
+
+.img-globe{
+  height:450px;
+  animation: ruota 3s linear infinite;
+  transform: rotate(360deg);
+}
+
+/* box description  */
+.description{
+  height: 750px;
+  background-color: #fefefe;
+}
+
+.text{
+  text-align: center;
+  padding-top: 100px;
+}
+
+.text2Bold{
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: bold;
+  color: #282935;
+  padding-top: 35px;
+  padding-bottom: 50px;
+}
+
+.contain-box{
+  width: 65%;
+  margin: auto;
+  display: flex;
+}
+
+.box{
+  width: calc(100% / 3 - 20px);
+  margin: 10px 5px;
+  float: left;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.contain-box .box img{
+  background-color: lightgrey;
+  height: 100%;
+  width: 100px;
+}
+
+.contain-box .box h3{
+  padding-bottom: 10px;
+}
+
+.contain-box .box p{
+  font-size: 15px;
+}
+
+.contain-btn{
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.light{
+  background-color: white;
+  color: #1eae96;
+  border: 1px solid lightgrey;
+}
+
+/* box gallery */
+
+.gallery{
+  height: 750px;
+  background-color: #eceeef;
+}
+
+.carosel{
+  height: 450px;
+  width: 1000px;
+  margin: auto;
+  background-color: lightblue;
+  display: flex;
+  align-items: flex-end;
+}
+
+.contain-points{
+  margin: auto;
+}
+
+.contain-points div{
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 5px;
+  float: left;
+  margin-left: 5px;
+}
+
+/* box 2' gallery */
+
+.contain{
+  height: 400px;
+  width: 1400px;
+  margin: auto;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card{
+  width: calc(100% / 4 - 20px);
+  height: 100%;
+  background-color: orange;
+  display: flex;
+  align-items: flex-end;
+  float: left;
+  border-radius: 10px;
+
+}
+
+.card-text{
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.voice{
+  color:#797979;
+  font-weight: bold;
+  font-size: 15px;
+  padding-top: 20px;
+}
+
+/* box video */
+
+.video{
+  height: 750px;
+  background-color: #343142;
+}
+
+.center-video{
+
+}
+
+.text-video{
+  text-align: left;
+}
+
+/* elementi piè di pagina- - - - - - - -  */
+footer{
+  background-color: #282935;
+  height: 300px;
+  width: auto;
+}
+
+.center{
+  width: 65%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.column h5{
+  color: #fefefe;
+}

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Vue -->
+   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+   <!-- font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <!-- font -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+   <title>Business-TittiCoach</title>
+   <!-- icona -->
+   <link rel="shortcut icon" href="img/favicon-32x32.png" />
+   <!-- css -->
+   <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+
+    <!-- barra di navigazione  lt sx-->
+    <header id="app">
+      <img src="img/dark-logo.png" class="lg-business" alt="">
+      <ul>
+        <li v-for="elm in elmNav">
+          {{ elm.text }} <i class="fas fa-chevron-down"></i>
+        </li>
+      </ul>
+
+      <!-- barra di navigazione  lt dx-->
+      <div class="userSearch">
+        <ul>
+          <li>
+            <img src="img/en.png" alt="">
+            <strong>
+              ENGLISH
+            </strong>
+            <i class="fas fa-chevron-down"></i>
+          </li>
+          <li>
+            <i class="far fa-user-circle"></i>
+          </li>
+        </ul>
+        <span>
+          <input type="text" name="" placeholder=" Search...">
+          <i class="fas fa-search"></i>
+        </span>
+      </div>
+    </header>
+
+    <!-- corpo sito -->
+    <main>
+
+      <div class="jumbotron">
+        <div class="center">
+          <div class="text-jumbotron">
+            <span class="text1">
+              New Challenges, New Skills
+            </span>
+            <h2 class="title">
+              build tuor own
+              <br>
+              file coaching
+              <br>
+              business
+            </h2>
+            <p class="text2">
+              Whole-life Business Coaching for committed
+              <br>
+              enterpreneurs
+            </p>
+            <button class="btn green" type="button" name="button">
+              Get started today
+            </button>
+          </div>
+          <img class="img-jmb" src="img/home-business-hero-avatar.png">
+          <img class="img-globe" src="img/home-business-hero-global-image.png" alt="">
+        </div>
+      </div>
+
+      <div class="description text">
+          <span class="text1">
+            Let's Dream Big Together
+          </span>
+          <p class="text2Bold">
+            We are pioneers of the digital approach, using leading-edge
+            <br>
+            technology to simplify procedures and apply executive
+            <br>
+            coaching in the new age of digitalization.
+          </p>
+          <div class="contain-box">
+            <div class="box">
+              <img src="" alt="">
+              <div class="">
+                <h3>
+                  One to One
+                </h3>
+                <p>
+                  Getting the necessary clarity about the current state to help you improve your game.
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <img src="" alt="">
+              <div class="">
+                <h3>
+                  Anywhere
+                </h3>
+                <p>
+                  Access to valuable and portable program which allow you to setup and live anywhere you want.
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <img src="" alt="">
+              <div class="">
+                <h3>
+                  On Time
+                </h3>
+                <p>
+                  Punctuality is our top priority because it's an essential criteria to assess a program quality.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="contain-box">
+            <div class="box">
+              <img src="" alt="">
+              <div class="">
+                <h3>
+                  Online Coures
+                </h3>
+                <p>
+                  Online business coaching now offers you a very powerful way to empower your business into success.
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <img src="" alt="">
+              <div class="">
+                <h3>
+                  Consulting
+                </h3>
+                <p>
+                  You will get a clear sense of direction for your business, thorough assessment and faster results.
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <img src="" alt="">
+              <div class="">
+                <h3>
+                  Self Development
+                </h3>
+                <p>
+                  Business Coaching often keep your focus and develop you both in a professional and personal way.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="contain-btn">
+            <button class="btn light" type="button" name="button">Learn more</button>
+            <button class="btn green" type="button" name="button">Get started today</button>
+          </div>
+      </div>
+
+      <div class="gallery text">
+        <span class="text1">
+          Let’s Dream Big Together
+        </span>
+        <p class="text2Bold">
+          Explore How can I help you
+        </p>
+        <div class="carosel">
+          <div class="">
+
+          </div>
+          <div class="contain-points">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="description text">
+        <span class="text1">
+          Let’s Dream Big Together
+        </span>
+        <p class="text2Bold">
+          Explore How can I help you
+        </p>
+        <div class="contain">
+
+          <div class="card">
+            <div class="card-text">
+              <h3>
+                $40,00
+              </h3>
+              <h3 class="card-title">
+                Learning to Write as a Professional Author
+              </h3>
+              <span><i class="far fa-file-alt"></i> 20 Lessons</span>
+              <span><i class="fas fa-user-alt"></i> 50 Students</span>
+              <p>
+                The purpose of this course is to provide the advanced writing techniques commonly used for inspiring readers and …
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-text">
+              <h3>
+                Free
+              </h3>
+              <h3 class="card-title">
+                Customer-centric Info-Tech Strategies
+              </h3>
+              <span><i class="far fa-file-alt"></i> 24 Lessons</span>
+              <span><i class="fas fa-user-alt"></i> 802 Students</span>
+              <p>
+                Now more than ever, corporations are investing heavily in IT. The quality of these investments affects the daily …
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-text">
+              <h3>
+                $19,00
+              </h3>
+              <h3 class="card-title">
+                Open Programming Courses for Everyone: Python
+              </h3>
+              <span><i class="far fa-file-alt"></i> 17 Lessons</span>
+              <span><i class="fas fa-user-alt"></i> 62 Students</span>
+              <p>
+                We cover the basics of how one constructs a program from a series of simple instructions in Python.   The …
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-text">
+              <h3>
+                $26,00
+              </h3>
+              <h3 class="card-title">
+                Academic Listening and Note-taking
+              </h3>
+              <span><i class="far fa-file-alt"></i> 14 Lessons</span>
+              <span><i class="fas fa-user-alt"></i> 67 Students</span>
+              <p>
+                To learn to speak English, it’s necessary that you can hear what native speakers are saying and understand …
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <p class="voice">
+          Take the control of their life back and start doing things to make their <br> dream come true. View all courses <i class="fas fa-long-arrow-alt-right"></i>
+        </p>
+
+      </div>
+
+      <div class="video">
+        <div class="center-video">
+          <div class="">
+            <img src="img/home-business-video-poster-670x450.jpg" alt="">
+          </div>
+          <div class="text-video">
+            <h2>To Thrive In Business Today, You’ll Need a Good Plan</h2>
+            <ul>
+              <li><i class="fas fa-sort-down"></i> How can we help?</li>
+              <li><i class="fas fa-sort-down"></i> Why would I need a business COACH?</li>
+              <li><i class="fas fa-sort-down"></i> What is one-on-one coaching?</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- piè pagina -->
+    <footer>
+      <div id="app" class="center">
+        <div class="column">
+          <h5>
+            Adress
+          </h5>
+          <ul>
+            <li>
+              {{elmFooter.address}}
+            </li>
+            <li>
+              {{elmFooter.phone}}
+            </li>
+            <li>
+              {{elmFooter.mail}}
+            </li>
+          </ul>
+          <ul>
+            <li v-for="elm in elmFooter">
+              {{elm.social}}
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <h5>Explore</h5>
+
+        </div>
+        <div class="column">
+          <h5>
+            Information
+          </h5>
+          <ul>
+            <li v-for="elm in Information">
+              {{elm.infoTxt}}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- js -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
