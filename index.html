@@ -22,13 +22,13 @@
       <!-- barra di navigazione  lt sx-->
       <header>
         <img src="img/dark-logo.png" class="lg-business" alt="">
-        <ul>
-          <li v-for="elm in elmNav">
+        <ul class="nav">
+          <li  v-for="elm in elmNav">
             {{ elm.text }} <i class="fas fa-chevron-down"></i>
           </li>
         </ul>
 
-        <!-- barra di navigazione  lt dx-->
+        <!--br nav lt dx-->
         <div class="userSearch">
           <ul>
             <li>
@@ -38,7 +38,7 @@
               </strong>
               <i class="fas fa-chevron-down"></i>
             </li>
-            <li>
+            <li class="icon-profile">
               <i class="far fa-user-circle"></i>
             </li>
           </ul>
@@ -59,7 +59,7 @@
                 New Challenges, New Skills
               </span>
               <h2 class="title">
-                build tuor own
+                build yuor own
                 <br>
                 file coaching
                 <br>
@@ -79,6 +79,7 @@
           </div>
         </div>
 
+        <!-- 2' box  -->
         <div class="description text">
             <span class="text1">
               Let's Dream Big Together
@@ -112,6 +113,7 @@
             </div>
         </div>
 
+        <!-- 3'box  -->
         <div class="gallery text">
           <span class="text1">
             Let’s Dream Big Together
@@ -120,9 +122,17 @@
             Explore How can I help you
           </p>
           <div class="carosel">
-            <div class="">
-
+            <div class="carosel-middle">
+              <div v-for="elm in caroselCard" class="carosel-card">
+                <img :src="elm.imgCrsl" alt="">
+                <h3 class="carosel-title">{{elm.title}}</h3>
+                <p class="carosel-text">{{elm.text}}</p>
+                <div class="carosel-button">
+                  Discover now <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+              </div>
             </div>
+
             <div class="contain-points">
               <div></div>
               <div></div>
@@ -131,6 +141,7 @@
           </div>
         </div>
 
+        <!-- 4' box -->
         <div class="description text">
           <span class="text1">
             Let’s Dream Big Together
@@ -149,11 +160,11 @@
                   <h3 class="card-title">
                     Learning to Write as a Professional Author
                   </h3>
-                  <span><i class="far fa-file-alt"></i> 20 Lessons</span>
+                  <!-- <span><i class="far fa-file-alt"></i> 20 Lessons</span>
                   <span><i class="fas fa-user-alt"></i> 50 Students</span>
                   <p>
                     The purpose of this course is to provide the advanced writing techniques commonly used for inspiring readers and …
-                  </p>
+                  </p> -->
                 </div>
                 <div class="hover">
                 </div>
@@ -161,17 +172,17 @@
 
             <div class="card card-img2">
               <div class="card-text">
-                <h3>
+                <h3 class="card-price">
                   Free
                 </h3>
                 <h3 class="card-title">
                   Customer-centric Info-Tech Strategies
                 </h3>
-                <span><i class="far fa-file-alt"></i> 24 Lessons</span>
+                <!-- <span><i class="far fa-file-alt"></i> 24 Lessons</span>
                 <span><i class="fas fa-user-alt"></i> 802 Students</span>
                 <p>
                   Now more than ever, corporations are investing heavily in IT. The quality of these investments affects the daily …
-                </p>
+                </p> -->
 
               </div>
               <div class="hover">
@@ -180,17 +191,17 @@
 
             <div class="card card-img3">
               <div class="card-text">
-                <h3>
+                <h3 class="card-price">
                   $19,00
                 </h3>
                 <h3 class="card-title">
                   Open Programming Courses for Everyone: Python
                 </h3>
-                <span><i class="far fa-file-alt"></i> 17 Lessons</span>
+                <!-- <span><i class="far fa-file-alt"></i> 17 Lessons</span>
                 <span><i class="fas fa-user-alt"></i> 62 Students</span>
                 <p>
                   We cover the basics of how one constructs a program from a series of simple instructions in Python.   The …
-                </p>
+                </p> -->
 
               </div>
               <div class="hover">
@@ -198,17 +209,17 @@
             </div>
             <div class="card card-img4">
               <div class="card-text">
-                <h3>
+                <h3 class="card-price">
                   $26,00
                 </h3>
                 <h3 class="card-title">
                   Academic Listening and Note-taking
                 </h3>
-                <span><i class="far fa-file-alt"></i> 14 Lessons</span>
+                <!-- <span><i class="far fa-file-alt"></i> 14 Lessons</span>
                 <span><i class="fas fa-user-alt"></i> 67 Students</span>
                 <p>
                   To learn to speak English, it’s necessary that you can hear what native speakers are saying and understand …
-                </p>
+                </p> -->
 
               </div>
               <div class="hover">
@@ -217,11 +228,12 @@
           </div>
 
           <p class="voice">
-            Take the control of their life back and start doing things to make their <br> dream come true. View all courses <i class="fas fa-long-arrow-alt-right"></i>
+            Take the control of their life back and start doing things to make their <br> dream come true. <span>View all courses <i class="fas fa-long-arrow-alt-right"></i></span>
           </p>
 
         </div>
 
+        <!-- 5' box -->
         <div class="video">
           <div class="center-video">
             <div class="contain-video">
@@ -241,7 +253,7 @@
           </div>
         </div>
 
-        <!-- calendario eventi  -->
+        <!--  6' box calendario eventi  -->
         <div class="calendar">
 
           <span class="text1">
@@ -271,10 +283,11 @@
 
           </div>
 
-            <p class="text-calendar">Excited about our event? View all events <i class="fas fa-long-arrow-alt-right"></i></p>
+            <p class="text-calendar">Excited about our event? <span>View all events <i class="fas fa-long-arrow-alt-right"></i></span></p>
 
         </div>
 
+        <!-- 7' box -->
         <div class="slide">
           <span class="text1">
              People are praising Maxcoach
@@ -284,10 +297,78 @@
           </p>
 
           <div class="slide-carosel">
+            <div class="slide-carosel-middle">
+
+              <div class="sld-crs-card">
+                <div class="sld-crs-card-text">
+                  <p class="sld-crs-card-text-title">
+                    It's a choice of quality for people with special needs
+                  </p>
+                  <p class="sld-crs-card-text-2">
+  					        I'm a very strict person so I require everything to be organized and neat. Then, I'll be able to make things right and shine. MaxCoach guys just got me.
+                  </p>
+                  <div class="sld-crs-card-img">
+                    <img src="img/testimonial-avata-03.jpg" alt="">
+                    <div class="sld-crs-card-profile">
+                      <span class="sld-crs-card-profile-title">Florence Themes</span>
+                      <span>/Multimedia Admin</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="sld-hover">
+                </div>
+              </div>
+
+              <div class="sld-crs-card">
+                <div class="sld-crs-card-text">
+                  <p class="sld-crs-card-text-title">
+                    High level of efficiency and scientific teaching methods
+                  </p>
+                  <p class="sld-crs-card-text-2">
+					          I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.
+                  </p>
+                  <div class="sld-crs-card-img">
+                    <img src="img/testimonial-avata-02.jpg" alt="">
+                    <div class="sld-crs-card-profile">
+                      <span class="sld-crs-card-profile-title">Florence Themes</span>
+                      <span>/Multimedia Admin</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sld-crs-card">
+                <div class="sld-crs-card-text">
+                  <p class="sld-crs-card-text-title">
+                    The MaxCoach team works really hard to ensure high quality
+                  </p>
+                  <p class="sld-crs-card-text-2">
+					          I am happy with their arrangement of lessons and subjects. They reflect a scientific  investigation into effective methods to be adopted for learners of all levels.
+                  </p>
+                  <div class="sld-crs-card-img">
+                    <img src="img/testimonial-avata-01.jpg" alt="">
+                    <div class="sld-crs-card-profile">
+                      <span class="sld-crs-card-profile-title">Florence Themes</span>
+                      <span>/Multimedia Admin</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="points-middle">
+              <div class="contain-points">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
 
           </div>
         </div>
 
+        <!-- 8' box -->
         <div class="newsLatter">
           <div class="text-newsLatter">
             <span class="text2Bold">
@@ -332,11 +413,17 @@
           </div>
           <div  class="column">
             <h3>Explore</h3>
-            <ul>
+            <div  class="grid-columm">
+              <div v-for="elm in Explore" class="">
+                <div class="grid-item-column">{{elm.ExTxt}}</div>
+              </div>
+
+            </div>
+            <!-- <ul>
               <li v-for="elm in Explore">
                 {{elm.ExTxt}}
               </li>
-            </ul>
+            </ul> -->
           </div>
           <div class="column">
             <h3>

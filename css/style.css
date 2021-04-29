@@ -93,7 +93,7 @@ main{
 }
 .jumbotron{
   background-color: #eceeef;
-  height: 700px;
+  height: 730px;
   width: auto;
   position: relative;
 }
@@ -144,19 +144,30 @@ main{
 }
 
 .img-globe{
-  height: 600px;
+  height: 700px;
+  animation: ruota 15s linear infinite;
 }
 
-/* box description  */
+@keyframes ruota{
+  0% {
+    transform: rotate(360deg);
+  }
+
+}
+
+/* 2' box   - - - - - -  - - - - - -*/
+.description{
+  height: 800px;
+}
+
 .descr-grid{
-  height:300px;
+  height:350px;
   width: 65%;
   margin: auto;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 10px 20px;
 }
-
 
 .dsk-grid-middle{
   display: flex;
@@ -174,7 +185,6 @@ main{
   padding: 20px;
 }
 
-/*  - - - */
 
 .text{
   text-align: center;
@@ -195,7 +205,6 @@ main{
   justify-content: space-between;
   width: 300px;
   margin: auto;
-  padding-top: 50px;
   padding-bottom: 50px;
 }
 
@@ -205,20 +214,61 @@ main{
   border: 1px solid lightgrey;
 }
 
-/* box gallery */
-
+/* 3' box  - - - - - -  - - - - - -*/
 .gallery{
   height: 750px;
   background-color: #eceeef;
 }
 
 .carosel{
-  height: 450px;
-  width: 1000px;
+  height: 460px;
+  width: 1150px;
   margin: auto;
-  background-color: lightblue;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+}
+.carosel-middle{
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.carosel-card{
+  width: 350px;
+  height: 430px;
+  background-color: white;
+  border-radius: 5px;
+  float: left;
+  box-shadow:  5px  5px 5px #dedede,
+              -5px -5px 5px #dedede,
+               5px -5px 5px #dedede,
+              -5px  5px 5px #dedede;
+
+}
+
+.carosel-card img{
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.carosel-title{
+  margin: 10px 0;
+}
+
+.carosel-text{
+  padding: 15px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #797979;
+}
+
+.carosel-button{
+  padding-top:20px;
+  color: #1eae96;
+  font-weight: bold;
+  font-size: 12px;
+  border-top: 1px solid #eceeef;
 }
 
 .contain-points{
@@ -234,8 +284,7 @@ main{
   margin-left: 5px;
 }
 
-/* box 2' gallery */
-
+/* 4' box  - - - - - -  - - - - - -*/
 .contain{
   height: 400px;
   width: 1400px;
@@ -295,7 +344,7 @@ main{
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  background-image: linear-gradient(0deg, black, white);
+  background-image: linear-gradient(0deg, black, transparent);
   position: absolute;
   opacity: 0.8;
 }
@@ -305,11 +354,13 @@ main{
   font-weight: bold;
   font-size: 15px;
   padding-top: 50px;
-  padding-bottom: 80px;
 }
 
-/* box video */
+.voice span{
+  color: black;
+}
 
+/* 5' box  - - - - - -  - - - - - -*/
 .video{
   height: 750px;
   background-image: url('../img/background-map-dots-top-right-transparent.png');
@@ -376,7 +427,7 @@ main{
   transform: translate(-50%, -50%);
 }
 
-/* boc calendario */
+/*  6' box calendario eventi  - - - - - -  - - - - - -*/
 .calendar{
   height: 950px;
   background-color: #fefefe;
@@ -425,6 +476,12 @@ main{
 .text-calendar{
   margin-top: 30px;
 }
+
+.calendar span{
+  color: #1eae96;
+  font-weight: bold;
+}
+
 /* cella data */
 .grid-date{
   margin: auto;
@@ -439,10 +496,9 @@ main{
 .month{
   text-transform: uppercase;
   font-weight: bold;
-
 }
 
-/*  - - -  */
+ /* 7' box  - - - - - -  - - - - - -*/
 .slide{
   height: 650px;
   background-color: #eceeef;
@@ -452,11 +508,77 @@ main{
 
 .slide-carosel{
   height: 350px;
-  width: 1700px;
-  background-color: orange;
+  width: 1600px;
   margin: auto;
 }
 
+.slide-carosel-middle{
+  height:300px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+.sld-crs-card{
+  height: 100%;
+  width: 500px;
+  background-color: white;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.sld-crs-card-text{
+  padding: 20px;
+}
+
+.sld-crs-card-text-title{
+  color: #343142;
+  font-weight: bold;
+}
+
+.sld-crs-card-text-2{
+  color: #797979;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.sld-crs-card-img{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.sld-crs-card-profile{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.sld-crs-card-img img{
+  height: 80px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.sld-crs-card-profile-title{
+  color: #343142;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+.points-middle{
+  padding: 20px 0px;
+  padding-left: 800px;
+}
+
+/* 8' box  - - - - - -  - - - - - - */
 .newsLatter{
   height: 340px;
   text-align: center;
@@ -489,7 +611,6 @@ main{
   background-color: #eceeef;
   padding-left: 15px;
   border-radius: 3px;
-
 }
 
 .input-newsLatter button{
@@ -500,10 +621,9 @@ main{
   background-color: #1eae96;
   font-weight: bold;
   border-radius: 0px 3px 3px 0px ;
-
 }
 
-/* elementi piè di pagina- - - - - - - -  */
+/* elementi piè di pagina- - - - - - - - - - -  */
 footer{
   background-color: #282935;
   height: 400px;
@@ -552,7 +672,47 @@ footer{
   font-size: 25px;
 }
 
+.grid-columm{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 60px;
+}
+
+.grid-item-column{
+  text-align: left;
+  font-size: 13px;
+  line-height: 2.5;
+}
+
 footer p{
   text-align: center;
   font-size: 13px;
+}
+
+
+/* effetti hover */
+
+
+.nav li:hover{
+  color: #1eae96;
+  cursor: pointer;
+  border-bottom: 1px solid #1eae96;
+}
+
+.icon-profile:hover{
+  color: #1eae96;
+  cursor: pointer;
+
+}
+
+.light:hover{
+  background-color: #343142;
+  color: white;
+  transition: 0.5s;
+}
+
+.green:hover{
+  background-color: #343142;
+  transition: 0.5s;
+  cursor: pointer;
 }
