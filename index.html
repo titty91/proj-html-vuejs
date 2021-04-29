@@ -91,8 +91,8 @@
               coaching in the new age of digitalization.
             </p>
             <div class="descr-grid">
-              <div class="dsk-grid-item">
-                <div v-for="elm in descriptionElm" class="dsk-grid-middle">
+              <div v-for="elm in descriptionElm" class="dsk-grid-item">
+                <div  class="dsk-grid-middle">
                       <img :src="elm.imgDesk" alt="">
                     <div class="desk-text">
                       <h3>
@@ -104,7 +104,6 @@
                     </div>
                 </div>
               </div>
-
 
             </div>
             <div class="contain-btn">
@@ -139,24 +138,28 @@
           <p class="text2Bold">
             Explore How can I help you
           </p>
+
           <div class="contain">
 
-            <div class="card">
-              <div class="card-text">
-                <h3>
-                  $40,00
-                </h3>
-                <h3 class="card-title">
-                  Learning to Write as a Professional Author
-                </h3>
-                <span><i class="far fa-file-alt"></i> 20 Lessons</span>
-                <span><i class="fas fa-user-alt"></i> 50 Students</span>
-                <p>
-                  The purpose of this course is to provide the advanced writing techniques commonly used for inspiring readers and …
-                </p>
-              </div>
+            <div class="card card-img">
+                <div class="card-text">
+                  <h3 class="card-price">
+                    $40,00
+                  </h3>
+                  <h3 class="card-title">
+                    Learning to Write as a Professional Author
+                  </h3>
+                  <span><i class="far fa-file-alt"></i> 20 Lessons</span>
+                  <span><i class="fas fa-user-alt"></i> 50 Students</span>
+                  <p>
+                    The purpose of this course is to provide the advanced writing techniques commonly used for inspiring readers and …
+                  </p>
+                </div>
+                <div class="hover">
+                </div>
             </div>
-            <div class="card">
+
+            <div class="card card-img2">
               <div class="card-text">
                 <h3>
                   Free
@@ -169,9 +172,13 @@
                 <p>
                   Now more than ever, corporations are investing heavily in IT. The quality of these investments affects the daily …
                 </p>
+
+              </div>
+              <div class="hover">
               </div>
             </div>
-            <div class="card">
+
+            <div class="card card-img3">
               <div class="card-text">
                 <h3>
                   $19,00
@@ -184,9 +191,12 @@
                 <p>
                   We cover the basics of how one constructs a program from a series of simple instructions in Python.   The …
                 </p>
+
+              </div>
+              <div class="hover">
               </div>
             </div>
-            <div class="card">
+            <div class="card card-img4">
               <div class="card-text">
                 <h3>
                   $26,00
@@ -199,6 +209,9 @@
                 <p>
                   To learn to speak English, it’s necessary that you can hear what native speakers are saying and understand …
                 </p>
+
+              </div>
+              <div class="hover">
               </div>
             </div>
           </div>
@@ -241,7 +254,7 @@
             <div v-for="elm in dateCalendar" class="grid-item">
               <div  class="grid-middle">
                 <div  class="grid-text">
-                  <p>
+                  <p class="grid-txt-p">
                     <i class="fas fa-map-marker-alt"></i> {{elm.city}}
                   </p>
                   <p class="grid-strong">

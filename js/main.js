@@ -80,29 +80,29 @@ function init() {
           text:'Getting the necessary clarity about the current state to help you improve your game.'
         },
         {
-          imgDesk:'position.png',
+          imgDesk:'img/position.png',
           title:'Anywhere',
           text:'Access to valuable and portable program which allow you to setup and live anywhere you want.'
         },
         {
-          imgDesk:'time.png',
+          imgDesk:'img/time.png',
           title:'On Time',
           text: "Punctuality is our top priority because it's an essential criteria to assess a program quality."
         },
         {
-          imgDesk:'pc.png',
+          imgDesk:'img/pc.png',
           title:'Online Coures',
-          text:''
+          text:'Online business coaching now offers you a very powerful way to empower your business into success.'
         },
         {
-          imgDesk:'jacket.png',
+          imgDesk:'img/jacket.png',
           title:'Consulting',
-          text:''
+          text:'You will get a clear sense of direction for your business, thorough assessment and faster results. '
         },
         {
-          imgDesk:'gear.png',
+          imgDesk:'img/gear.png',
           title:'Self Development',
-          text:''
+          text:'Business Coaching often keep your focus and develop you both in a professional and personal way. '
         },
       ],
       dateCalendar:[
@@ -142,7 +142,10 @@ function init() {
           day: '12',
           month: 'agu'
         },
-      ]
+      ],
+
+  
+
     },
 
   })
