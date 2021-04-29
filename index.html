@@ -90,75 +90,22 @@
               <br>
               coaching in the new age of digitalization.
             </p>
-            <div class="contain-box">
-              <div class="box">
-                <img src="" alt="">
-                <div class="">
-                  <h3>
-                    One to One
-                  </h3>
-                  <p>
-                    Getting the necessary clarity about the current state to help you improve your game.
-                  </p>
+            <div class="descr-grid">
+              <div class="dsk-grid-item">
+                <div v-for="elm in descriptionElm" class="dsk-grid-middle">
+                      <img :src="elm.imgDesk" alt="">
+                    <div class="desk-text">
+                      <h3>
+                        {{elm.title}}
+                      </h3>
+                      <p>
+                        {{elm.text}}
+                      </p>
+                    </div>
                 </div>
               </div>
-              <div class="box">
-                <img src="" alt="">
-                <div class="">
-                  <h3>
-                    Anywhere
-                  </h3>
-                  <p>
-                    Access to valuable and portable program which allow you to setup and live anywhere you want.
-                  </p>
-                </div>
-              </div>
-              <div class="box">
-                <img src="" alt="">
-                <div class="">
-                  <h3>
-                    On Time
-                  </h3>
-                  <p>
-                    Punctuality is our top priority because it's an essential criteria to assess a program quality.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="contain-box">
-              <div class="box">
-                <img src="" alt="">
-                <div class="">
-                  <h3>
-                    Online Coures
-                  </h3>
-                  <p>
-                    Online business coaching now offers you a very powerful way to empower your business into success.
-                  </p>
-                </div>
-              </div>
-              <div class="box">
-                <img src="" alt="">
-                <div class="">
-                  <h3>
-                    Consulting
-                  </h3>
-                  <p>
-                    You will get a clear sense of direction for your business, thorough assessment and faster results.
-                  </p>
-                </div>
-              </div>
-              <div class="box">
-                <img src="" alt="">
-                <div class="">
-                  <h3>
-                    Self Development
-                  </h3>
-                  <p>
-                    Business Coaching often keep your focus and develop you both in a professional and personal way.
-                  </p>
-                </div>
-              </div>
+
+
             </div>
             <div class="contain-btn">
               <button class="btn light" type="button" name="button">Learn more</button>
@@ -281,7 +228,8 @@
           </div>
         </div>
 
-        <div class="grill">
+        <!-- calendario eventi  -->
+        <div class="calendar">
 
           <span class="text1">
             Wanna transform your life?
@@ -289,89 +237,59 @@
           <p class="text2Bold">
             Upcoming Events
           </p>
-
-          <div class="center-gril">
-
-            <div class="cell">
-              <div class="text-cell">
-                <p><i class="fas fa-map-marker-alt"></i> Texas, US </p>
-                <h3>Storytelling Workshop</h3>
-              </div>
-              <div class="date-cell">
-                <span class="date">22</span>
-                <span> <strong>APR</strong></span>
-                <button class="btn green" type="button" name="button">Get ticket</button>
-              </div>
-            </div>
-
-            <div class="cell">
-              <div class="text-cell">
-                <p><i class="fas fa-map-marker-alt"></i> Texas, US </p>
-                <h3>Storytelling Workshop</h3>
-              </div>
-              <div class="date-cell">
-                <span class="date">22</span>
-                <span> <strong>APR</strong></span>
-                <button class="btn green" type="button" name="button">Get ticket</button>
+          <div class="calendar-grid">
+            <div v-for="elm in dateCalendar" class="grid-item">
+              <div  class="grid-middle">
+                <div  class="grid-text">
+                  <p>
+                    <i class="fas fa-map-marker-alt"></i> {{elm.city}}
+                  </p>
+                  <p class="grid-strong">
+                    {{elm.event}}
+                  </p>
+                </div>
+                <div class="grid-date">
+                  <p class="number">{{elm.day}}</p>
+                  <p class="month">{{elm.month}}</p>
+                  <button class="btn green" type="button" name="button">Get ticket</button>
+                </div>
               </div>
             </div>
 
           </div>
-          <div class="center-gril">
 
-            <div class="cell">
-              <div class="text-cell">
-                <p><i class="fas fa-map-marker-alt"></i> Texas, US </p>
-                <h3>Storytelling Workshop</h3>
-              </div>
-              <div class="date-cell">
-                <span class="date">22</span>
-                <span> <strong>APR</strong></span>
-                <button class="btn green" type="button" name="button">Get ticket</button>
-              </div>
-            </div>
+            <p class="text-calendar">Excited about our event? View all events <i class="fas fa-long-arrow-alt-right"></i></p>
 
-            <div class="cell">
-              <div class="text-cell">
-                <p><i class="fas fa-map-marker-alt"></i> Texas, US </p>
-                <h3>Storytelling Workshop</h3>
-              </div>
-              <div class="date-cell">
-                <span class="date">22</span>
-                <span> <strong>APR</strong></span>
-                <button class="btn green" type="button" name="button">Get ticket</button>
-              </div>
-            </div>
+        </div>
+
+        <div class="slide">
+          <span class="text1">
+             People are praising Maxcoach
+          </span>
+          <p class="text2Bold">
+             What make they love us?
+          </p>
+
+          <div class="slide-carosel">
 
           </div>
-          <div class="center-gril">
+        </div>
 
-            <div class="cell">
-              <div class="text-cell">
-                <p><i class="fas fa-map-marker-alt"></i> Texas, US </p>
-                <h3>Storytelling Workshop</h3>
-              </div>
-              <div class="date-cell">
-                <span class="date">22</span>
-                <span> <strong>APR</strong></span>
-                <button class="btn green" type="button" name="button">Get ticket</button>
-              </div>
-            </div>
-
-            <div class="cell">
-              <div class="text-cell">
-                <p><i class="fas fa-map-marker-alt"></i> Texas, US </p>
-                <h3>Storytelling Workshop</h3>
-              </div>
-              <div class="date-cell">
-                <span class="date">22</span>
-                <span> <strong>APR</strong></span>
-                <button class="btn green" type="button" name="button">Get ticket</button>
-              </div>
-            </div>
-
+        <div class="newsLatter">
+          <div class="text-newsLatter">
+            <span class="text2Bold">
+                <strong>Subscribe</strong> Newsletters
+            </span>
+            <p class="voice">
+              Enter your email address to register to our newsletter subscription <br>
+              delivered on a regular basis!
+            </p>
           </div>
-            <p class="">Excited about our event? View all events</p>
+
+          <div class="input-newsLatter">
+            <input type="text" name="" value="" placeholder="Enter your Email" >
+            <button type="button" name="button">Subscribe</button>
+          </div>
         </div>
       </main>
 

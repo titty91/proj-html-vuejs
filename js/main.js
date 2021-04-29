@@ -72,6 +72,76 @@ function init() {
         {
           infoTxt: 'Terms of service'
         }
+      ],
+      descriptionElm:[
+        {
+          imgDesk:'img/lamp.png',
+          title:'One to One',
+          text:'Getting the necessary clarity about the current state to help you improve your game.'
+        },
+        {
+          imgDesk:'position.png',
+          title:'Anywhere',
+          text:'Access to valuable and portable program which allow you to setup and live anywhere you want.'
+        },
+        {
+          imgDesk:'time.png',
+          title:'On Time',
+          text: "Punctuality is our top priority because it's an essential criteria to assess a program quality."
+        },
+        {
+          imgDesk:'pc.png',
+          title:'Online Coures',
+          text:''
+        },
+        {
+          imgDesk:'jacket.png',
+          title:'Consulting',
+          text:''
+        },
+        {
+          imgDesk:'gear.png',
+          title:'Self Development',
+          text:''
+        },
+      ],
+      dateCalendar:[
+        {
+          city: 'Texas, Us',
+          event:'Storytelling Workshop',
+          day: '22',
+          month: 'apr'
+        },
+        {
+          city: 'New York, Us',
+          event:'Painting Art Contest 2020',
+          day: '10',
+          month: 'oct'
+        },
+        {
+          city: 'Hamburg, Germany',
+          event:'International Art Fair 2020',
+          day: '23',
+          month: 'nov'
+        },
+        {
+          city: 'Illinois, Us',
+          event:'Street Performance: Call for Artist',
+          day: '15',
+          month: 'dec'
+        },
+        {
+          city: 'Illinois, Us',
+          event:'Consumer Food Safety Education Conference',
+          day: '22',
+          month: 'jul'
+        },
+        {
+          city: 'Dubai',
+          event:'How meditation improve your mental health?',
+          day: '12',
+          month: 'agu'
+        },
       ]
     },
 
